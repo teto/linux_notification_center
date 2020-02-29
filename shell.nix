@@ -33,9 +33,6 @@ in
 
   # export HIE_HOOGLE_DATABASE=$NIX_GHC_DOCDIR as DOCDIR doesn't exist it won't work
   # or an interesting
-  # shellHook = "eval $(grep export ${ghc}/bin/ghc)";
-  # echo "importing a custom nvim ${my_nvim}"
-  # export PATH="${my_nvim}/bin:$PATH"
   shellHook = ''
     # check if it's still needed ?
     export HIE_HOOGLE_DATABASE="$NIX_GHC_LIBDIR/../../share/doc/hoogle/index.html"
